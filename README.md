@@ -1,4 +1,4 @@
-# projeto1 fullstack
+# Projeto 1 FullStack
 
 ### Last.fm API
 
