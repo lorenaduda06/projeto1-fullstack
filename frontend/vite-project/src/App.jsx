@@ -4,7 +4,7 @@ import InfoArtist from "./components/InfoArtists";
 function App() {
   return(
     <div className="container-app">
-      <header>
+      <header className="header-app">
         <h1>SonarHub</h1>
         <p>Encontre informações sobre seus artistas favoritos.</p>
       </header>
