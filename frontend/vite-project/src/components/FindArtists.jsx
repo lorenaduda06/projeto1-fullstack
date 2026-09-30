@@ -1,9 +1,9 @@
 function FindArtists() {
     return(
-        <section>
-            <input type="text" placeholder="Digite o nome do artista"></input>
+        <section className="find-artists">
+            <input className="inp-search" type="text" placeholder="Digite o nome do artista"></input>
 
-            <button>Buscar</button>
+            <button className="btn-search" >Buscar</button>
         </section>
     );
 }
