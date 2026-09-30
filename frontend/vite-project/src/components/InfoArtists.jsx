@@ -9,10 +9,10 @@ function InfoArtist() {
     }
 
     return(
-        <section>
-            <img src={artist.image} alt={artist.name}></img>
+        <section className="info-artist">
+            <img className="artist-img" src={artist.image} alt={artist.name}></img>
 
-            <div>
+            <div className="artist-details">
                 <h2>{artist.name}</h2>
                 <p>{artist.bio}</p>
                 <p>Ouvintes: {artist.listeners}</p>
