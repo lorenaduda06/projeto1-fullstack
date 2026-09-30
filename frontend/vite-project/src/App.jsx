@@ -1,5 +1,6 @@
 import BuscaArtista from "./components/FindArtists";
 import InfoArtist from "./components/InfoArtists";
+import "./App.css";
 
 function App() {
   return(

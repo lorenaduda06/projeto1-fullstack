@@ -14,7 +14,7 @@ function InfoArtist() {
 
             <div className="artist-details">
                 <h2>{artist.name}</h2>
-                <p>{artist.bio}</p>
+                <p className="artist-bio">{artist.bio}</p>
                 <p>Ouvintes: {artist.listeners}</p>
                 <p>Reproduções: {artist.streams}</p>
             </div>
