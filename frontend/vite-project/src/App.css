@@ -1,134 +1,157 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
 
 .container-app {
-    width: 100%;
-    min-height: 100vh;
-    padding: 40px 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .header-app {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .header-app h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+  color: rgb(154, 38, 152);
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
 .header-app p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .find-artists {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.find-artists > form > .inp-search {
+  width: 400px;
+  height: 45px;
+  font-size: 18px;
+  padding-left: 12px;
+  box-sizing: border-box
+}
+
+.find-artists > form > .btn-search {
+  height: 45px;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-left: 8px;
+  vertical-align: top;
 }
 
 .inp-search {
-    width: 400px;
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
+  width: 400px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
 }
 
 .btn-search {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .btn-search:hover {
   opacity: 0.8;
 }
 
-.info-artists {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    background-color: white;
-    border-radius: 15px;
+.info-artist {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.info-artist > #btn-back {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .artist-img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .artist-details {
-    flex: 1;
+  flex: 1;
 }
 
 .artist-details h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .artist-bio {
-    margin-bottom: 20px;
-    line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .artist-details p {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* RESPONSIVIDADE PARA CELULAR */
 @media (max-width: 600px) {
 
-    .container-app {
-        padding: 30px 15px;
-    }
+  .container-app {
+    padding: 30px 15px;
+  }
 
-    .header-app h1 {
-        font-size: 32px;
-    }
+  .header-app h1 {
+    font-size: 32px;
+  }
 
-    .header-app p {
-        font-size: 16px;
-    }
+  .header-app p {
+    font-size: 16px;
+  }
 
-    .find-artists {
-        flex-direction: column;
-    }
+  .find-artists {
+    flex-direction: column;
+  }
 
-    .inp-search {
-        width: 100%;
-    }
+  .inp-search {
+    width: 100%;
+  }
 
-    .btn-search {
-        width: 100%;
-    }
+  .btn-search {
+    width: 100%;
+  }
 
-    .info-artist {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
+  .info-artist {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
 
-    .artist-img {
-        width: 160px;
-        height: 160px;
-    }
+  .artist-img {
+    width: 160px;
+    height: 160px;
+  }
 
 }

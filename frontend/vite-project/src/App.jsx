@@ -1,4 +1,6 @@
-import BuscaArtista from "./components/FindArtists";
+import { Routes, Route } from "react-router-dom";
+
+import FindArtists from "./components/FindArtists";
 import InfoArtist from "./components/InfoArtists";
 import "./App.css";
 
@@ -7,13 +9,12 @@ function App() {
     <div className="container-app">
       <header className="header-app">
         <h1>SonarHub</h1>
-        <p>Encontre informações sobre seus artistas favoritos.</p>
       </header>
 
-      <main>
-        <BuscaArtista></BuscaArtista>
-        <InfoArtist></InfoArtist>
-      </main>
+      <Routes>
+        <Route path="/" element={<FindArtists></FindArtists>}></Route>
+        <Route path="/info-artist" element={<InfoArtist></InfoArtist>}></Route>
+      </Routes>
     </div>
   )
 }

@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function InfoArtist() {
+    const navigate = useNavigate();
     // No início são usados dados fictícios temporariamwnte
     const artist = {
         name: "Taylor Swift",
@@ -8,8 +11,14 @@ function InfoArtist() {
         streams: "5.000.000"
     }
 
-    return(
+    return (
         <section className="info-artist">
+            <div style={{ width: "100%", textAlign: "left", marginBottom: "20px" }}>
+                <button id="btn-back" onClick={() => navigate("/")}>
+                    ← Voltar
+                </button>
+            </div>
+
             <img className="artist-img" src={artist.image} alt={artist.name}></img>
 
             <div className="artist-details">
