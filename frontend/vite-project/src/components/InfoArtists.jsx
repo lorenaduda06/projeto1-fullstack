@@ -1,8 +1,13 @@
-import { useNavigate } from "react-router-dom";
+
+import { useNavigate, useSearchParams } from "react-router-dom";
+import "../styles/InfoArtists.css";
 
 function InfoArtist() {
     const navigate = useNavigate();
-    // No início são usados dados fictícios temporariamwnte
+    const [params] = useSearchParams();
+    const name = params.get("name");
+
+    // No início são usados dados fictícios temporariamente
     const artist = {
         name: "Taylor Swift",
         image: "https...",
@@ -12,22 +17,38 @@ function InfoArtist() {
     }
 
     return (
-        <section className="info-artist">
-            <div style={{ width: "100%", textAlign: "left", marginBottom: "20px" }}>
-                <button id="btn-back" onClick={() => navigate("/")}>
-                    ← Voltar
-                </button>
-            </div>
+        <main className="info-page">
+            <button id="btn-back" onClick={() => navigate("/")}>
+                ← Voltar
+            </button>
 
-            <img className="artist-img" src={artist.image} alt={artist.name}></img>
+            <section className="info-artist">
+                {artist.image ? (
+                    <img className="artist-img" src={artist.image} alt={artist.name} />
+                ) : (
+                    <div className="artist-img artist-img-placeholder" aria-hidden="true">
+                        {artist.name.charAt(0).toUpperCase()}
+                    </div>
+                )}
 
-            <div className="artist-details">
-                <h2>{artist.name}</h2>
-                <p className="artist-bio">{artist.bio}</p>
-                <p>Ouvintes: {artist.listeners}</p>
-                <p>Reproduções: {artist.streams}</p>
-            </div>
-        </section>
+                <div className="artist-details">
+                    <h2>{artist.name}</h2>
+                    <p className="artist-bio">{artist.bio}</p>
+
+                    <div className="artist-stats">
+                        <div className="stat">
+                            <span className="stat-value">{artist.listeners}</span>
+                            <span className="stat-label">Ouvintes</span>
+                        </div>
+
+                        <div className="stat">
+                            <span className="stat-value">{artist.streams}</span>
+                            <span className="stat-label">Reproduções</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     );
 }
 

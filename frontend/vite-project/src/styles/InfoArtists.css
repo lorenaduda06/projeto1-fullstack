@@ -1,0 +1,111 @@
+.info-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.btn-back {
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  color: #e7dcea;
+  background: transparent;
+  border: 1px solid #493d50;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.btn-back:hover {
+  color: #fff;
+  border-color: #d277e5;
+}
+
+.info-artist {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 28px;
+  background: #1b1620;
+  border: 1px solid #332a39;
+  border-radius: 15px;
+}
+
+.artist-img {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #2b2230;
+}
+
+.artist-img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dc91eb;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.artist-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-details h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -1px;
+}
+
+.artist-bio {
+  margin: 0 0 24px;
+  color: #b9adbf;
+  line-height: 1.6;
+}
+
+.artist-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 12px 16px;
+  background: #201a26;
+  border: 1px solid #332a39;
+  border-radius: 10px;
+}
+
+.stat-value {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #a99bad;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .info-artist {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .artist-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .artist-stats {
+    justify-content: center;
+  }
+}

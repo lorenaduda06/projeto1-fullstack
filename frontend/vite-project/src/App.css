@@ -53,23 +53,6 @@ body {
   vertical-align: top;
 }
 
-.inp-search {
-  width: 400px;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
-}
-
-.btn-search {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
 .btn-search:hover {
   opacity: 0.8;
 }
@@ -83,6 +66,12 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 15px;
+}
+
+.info-artist div {
+  width: 100%; 
+  text-align: left; 
+  margin-bottom: 20px;
 }
 
 .info-artist > #btn-back {
@@ -131,8 +120,9 @@ body {
     font-size: 16px;
   }
 
-  .find-artists {
+  .find-artists form {
     flex-direction: column;
+    gap: 5rem;
   }
 
   .inp-search {
