@@ -2,10 +2,10 @@ import { Routes, Route } from "react-router-dom";
 
 import FindArtists from "./components/FindArtists";
 import InfoArtist from "./components/InfoArtists";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
-  return(
+  return (
     <div className="container-app">
       <header className="header-app">
         <h1>SonarHub</h1>
