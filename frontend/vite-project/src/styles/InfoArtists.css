@@ -54,14 +54,14 @@
 
 .artist-details h2 {
   margin: 0 0 12px;
-  color: #fff;
+  color: #201a26;
   font-size: clamp(28px, 4vw, 40px);
   letter-spacing: -1px;
 }
 
 .artist-bio {
   margin: 0 0 24px;
-  color: #b9adbf;
+  color: #652472;
   line-height: 1.6;
 }
 

@@ -42,7 +42,7 @@
 .search-controls {
   display: flex;
   gap: 10px;
-  box-shadow: 0 6px 20px #7c5cff55;
+  background: transparent !important;
 }
 
 .search-controls input {

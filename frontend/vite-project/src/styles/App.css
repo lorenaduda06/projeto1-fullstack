@@ -5,17 +5,16 @@
 }
 
 body {
-  background-color: #100817;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    #2a123b 0%,
+    #100817 58%
+  );
   color: #f4ebff;
   font-family: Arial, sans-serif;
 }
 
 .container-app {
-   background: radial-gradient(
-    ellipse at 50% 0%,
-    #2a123b 0%,
-    #100817 58%
-  );
   width: 100%;
   min-height: 100vh;
   padding: 40px 20px;

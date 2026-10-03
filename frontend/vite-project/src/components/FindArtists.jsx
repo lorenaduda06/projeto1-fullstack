@@ -102,8 +102,7 @@ function FindArtists() {
                     <label htmlFor="artist-name">Nome do artista</label>
 
                     <div className="search-controls">
-                        <input id="artist-name" type="text" placeholder="Digite o nome do artista" value={text} onChange={(e) => setText(e.target.value)} className="inp-search">
-                        </input>
+                        <input id="artist-name" type="text" placeholder="Digite o nome do artista" value={text} onChange={(e) => setText(e.target.value)} className="inp-search" />
                         <button className="btn-search" disabled={isLoading}>
                             {isLoading ? "Buscando..." : "Buscar"}
                         </button>
