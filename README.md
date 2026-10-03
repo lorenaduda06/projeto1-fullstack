@@ -59,6 +59,7 @@ detalhes do artista dentro da SPA.
 
 ## Equipe
 | Nome | RA |
-| Caelayne Aparecida | 2766957
-| João Pinho | 2767074
-| Lorena Eduarda | 2767104
+| --------- | --------- | ------- |
+| Caelayne Aparecida | 2766957 |
+| João Pinho | 2767074 |
+| Lorena Eduarda | 2767104 |
