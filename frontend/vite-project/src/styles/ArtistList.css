@@ -12,11 +12,12 @@
 
 .results-heading h2 {
   margin: 0;
+  color: #faf5ff;
   font-size: 22px;
 }
 
 .results-heading span {
-  color: #a99bad;
+  color: #b7a6c4;
   font-size: 13px;
 }
 
