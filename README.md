@@ -57,7 +57,7 @@ ouvintes.
 O react-router-dom controla as rotas e permite navegar entre a busca e os
 detalhes do artista dentro da SPA.
 
-
+## Equipe
 | Nome | RA |
 | --------- | :---------: |
 | Caelayne Aparecida | 2766957 |
