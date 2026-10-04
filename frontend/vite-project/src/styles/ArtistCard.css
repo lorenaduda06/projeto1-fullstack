@@ -1,15 +1,15 @@
 .artist-card {
   overflow: hidden;
-  background: #1b1620;
-  border: 1px solid #332a39;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 15px;
   transition: transform 160ms ease, border-color 160ms ease;
 }
 
 .artist-card:hover {
   transform: translateY(-3px);
-  border-color: #80518a;
-  box-shadow: 0 10px 30px #7c5cff33;
+  border-color: var(--color-border-hover);
+  box-shadow: 0 10px 30px var(--color-card-shadow);
 }
 
 .artist-card-image {
@@ -17,7 +17,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  background: #2b2230;
+  background: var(--color-image-placeholder);
 }
 
 .artist-card-content {
@@ -27,7 +27,7 @@
 .artist-card h3 {
   overflow: hidden;
   margin: 0 0 6px;
-  color: #fff;
+  color: var(--color-text-primary);
   font-size: 18px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -35,7 +35,7 @@
 
 .artist-card p {
   margin: 0 0 16px;
-  color: #b9adbf;
+  color: var(--color-text-description);
   font-size: 13px;
 }
 
@@ -44,15 +44,15 @@
   min-height: 40px;
   border: 0;
   border-radius: 10px;
-  color: #190e1c;
-  background: #dc91eb;
+  color: var(--color-text-on-accent);
+  background: var(--color-accent-soft);
   font-weight: 700;
   cursor: pointer;
   transition: background 160ms ease, transform 160ms ease;
 }
 
 .artist-card button:hover {
-  background: #e8b0f1;
+  background: var(--color-accent-hover);
   transform: translateY(-1px);
 }
 

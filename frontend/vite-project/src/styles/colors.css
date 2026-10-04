@@ -1,0 +1,33 @@
+:root {
+  --color-app-background: #100817;
+  --color-app-glow: #2a123b;
+  --color-app-text: #f4ebff;
+  --color-brand: #c77dff;
+  --color-legacy-info-surface: white;
+
+  --color-surface: #1b1620;
+  --color-surface-raised: #201a26;
+  --color-image-placeholder: #2b2230;
+  --color-border: #332a39;
+  --color-border-strong: #493d50;
+  --color-border-hover: #80518a;
+
+  --color-text-primary: #fff;
+  --color-text-soft: #e7dcea;
+  --color-text-heading: #faf5ff;
+  --color-text-label: #d2c4df;
+  --color-text-muted: #a99bad;
+  --color-text-description: #b9adbf;
+  --color-text-stat: #a7a3a3;
+  --color-text-count: #b7a6c4;
+  --color-text-placeholder: #8f8495;
+  --color-text-on-accent: #190e1c;
+  --color-text-bio: #652472;
+
+  --color-accent: #d277e5;
+  --color-accent-soft: #dc91eb;
+  --color-accent-hover: #e8b0f1;
+  --color-accent-shadow: #d277e533;
+  --color-card-shadow: #7c5cff33;
+  --color-error: #ff9b9b;
+}

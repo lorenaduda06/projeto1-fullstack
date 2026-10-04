@@ -6,17 +6,17 @@
 .btn-back {
   margin-bottom: 20px;
   padding: 8px 14px;
-  color: #e7dcea;
+  color: var(--color-text-soft);
   background: transparent;
-  border: 1px solid #493d50;
+  border: 1px solid var(--color-border-strong);
   border-radius: 10px;
   cursor: pointer;
   transition: border-color 160ms ease, color 160ms ease;
 }
 
 .btn-back:hover {
-  color: #fff;
-  border-color: #d277e5;
+  color: var(--color-text-primary);
+  border-color: var(--color-accent);
 }
 
 .info-artist {
@@ -24,8 +24,8 @@
   align-items: flex-start;
   gap: 32px;
   padding: 28px;
-  background: #1b1620;
-  border: 1px solid #332a39;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 15px;
 }
 
@@ -35,14 +35,14 @@
   height: 240px;
   object-fit: cover;
   border-radius: 12px;
-  background: #2b2230;
+  background: var(--color-image-placeholder);
 }
 
 .artist-img-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #dc91eb;
+  color: var(--color-accent-soft);
   font-size: 72px;
   font-weight: 700;
 }
@@ -54,14 +54,14 @@
 
 .artist-details h2 {
   margin: 0 0 12px;
-  color: #201a26;
+  color: var(--color-surface-raised);
   font-size: clamp(28px, 4vw, 40px);
   letter-spacing: -1px;
 }
 
 .artist-bio {
   margin: 0 0 24px;
-  color: #652472;
+  color: var(--color-text-bio);
   line-height: 1.6;
 }
 
@@ -76,19 +76,19 @@
   flex-direction: column;
   min-width: 140px;
   padding: 12px 16px;
-  background: #201a26;
-  border: 1px solid #332a39;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
   border-radius: 10px;
 }
 
 .stat-value {
-  color: #fff;
+  color: var(--color-text-stat);
   font-size: 20px;
   font-weight: 700;
 }
 
 .stat-label {
-  color: #a99bad;
+  color: var(--color-text-muted);
   font-size: 13px;
 }
 

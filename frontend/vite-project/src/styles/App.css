@@ -5,16 +5,17 @@
 }
 
 body {
-  background: radial-gradient(
-    ellipse at 50% 0%,
-    #2a123b 0%,
-    #100817 58%
-  );
-  color: #f4ebff;
+  background-color: var(--color-app-background);
+  color: var(--color-app-text);
   font-family: Arial, sans-serif;
 }
 
 .container-app {
+   background: radial-gradient(
+    ellipse at 50% 0%,
+    var(--color-app-glow) 0%,
+    var(--color-app-background) 58%
+  );
   width: 100%;
   min-height: 100vh;
   padding: 40px 20px;
@@ -26,7 +27,7 @@ body {
 }
 
 .header-app h1 {
-  color: #c77dff;
+  color: var(--color-brand);
   font-size: 42px;
   margin-bottom: 10px;
 }
@@ -69,7 +70,7 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
-  background-color: white;
+  background-color: var(--color-legacy-info-surface);
   border-radius: 15px;
 }
 
